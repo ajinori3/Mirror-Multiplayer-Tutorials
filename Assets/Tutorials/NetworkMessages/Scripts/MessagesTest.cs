@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace DapperDino.Mirror.Tutorials.NetworkMessages
 {
-    public class Notification : NetworkMessage
+    public struct Notification : NetworkMessage
     {
         public string content;
     }
@@ -20,7 +20,7 @@ namespace DapperDino.Mirror.Tutorials.NetworkMessages
             NetworkClient.RegisterHandler<Notification>(OnNotification);
         }
 
-        private void OnNotification(NetworkConnection conn, Notification msg)
+        private void OnNotification(Notification msg)
         {
             notificationsText.text += $"\n{msg.content}";
         }

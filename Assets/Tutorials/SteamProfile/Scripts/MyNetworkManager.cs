@@ -5,7 +5,7 @@ namespace DapperDino.Mirror.Tutorials.SteamProfile
 {
     public class MyNetworkManager : NetworkManager
     {
-        public override void OnServerAddPlayer(NetworkConnection conn)
+        public override void OnServerAddPlayer(NetworkConnectionToClient conn)
         {
             base.OnServerAddPlayer(conn);
 

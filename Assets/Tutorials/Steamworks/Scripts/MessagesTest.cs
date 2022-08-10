@@ -1,10 +1,11 @@
 ﻿using Mirror;
+using System;
 using TMPro;
 using UnityEngine;
 
 namespace DapperDino.Mirror.Tutorials.Steamworks
 {
-    public class Notification : NetworkMessage
+    public struct Notification : NetworkMessage
     {
         public string content;
     }
@@ -20,7 +21,7 @@ namespace DapperDino.Mirror.Tutorials.Steamworks
             NetworkClient.RegisterHandler<Notification>(OnNotification);
         }
 
-        private void OnNotification(NetworkConnection conn, Notification msg)
+        private void OnNotification(Notification msg)
         {
             notificationsText.text += $"\n{msg.content}";
         }

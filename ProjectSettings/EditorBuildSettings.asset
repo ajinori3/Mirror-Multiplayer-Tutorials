@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Tutorials/CharacterSelection/Scenes/Scene_CharacterSelection.unity
-    guid: 09a346243b0d8be45a8b78e21c7c21c3
+    path: Assets/Tutorials/Steamworks/Scene_Steamworks.unity
+    guid: 114f4ef758b28694ca70ef566d3564f3
+  - enabled: 1
+    path: Assets/Tutorials/Steamworks/Scene_SteamworksLobby.unity
+    guid: 4b22f4aac1e23b84697926c69b53bd79
   m_configObjects: {}

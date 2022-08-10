@@ -51,7 +51,7 @@ namespace DapperDino.Mirror.Tutorials.CharacterSelection
             characterSelectDisplay.SetActive(false);
         }
 
-        [Command(ignoreAuthority = true)]
+        [Command(requiresAuthority = true)]
         public void CmdSelect(int characterIndex, NetworkConnectionToClient sender = null)
         {
             GameObject characterInstance = Instantiate(characters[characterIndex].GameplayCharacterPrefab);
